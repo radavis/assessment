@@ -1,7 +1,11 @@
+def odd_or_even(num)
+  if num % 2 == 0
+    "even"
+  else
+    "odd"
+  end
+end
+
 print "What is the number?\n> "
 num = gets.chomp.to_i
-if num % 2 == 0
-  puts "It is even!"
-else
-  puts "It is odd!"
-end
+puts "It is #{odd_or_even(num)}"
